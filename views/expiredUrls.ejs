@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expired URLs</title>
+</head>
+<body>
+    <h1>Expired URLs</h1>
+    <ul>
+        <% expiredUrls.forEach(url => { %>
+            <li>
+                Full URL: <%= url.full %> - Short URL: <%= url.short %> - Expired At: <%= url.expiresAt %>
+            </li>
+        <% }) %>
+    </ul>
+    <a href="/">Go back to homepage</a>
+</body>
+</html>
